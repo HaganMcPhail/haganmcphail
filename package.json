@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "^16.2.3",
+    "less": "^3.9.0",
     "livereload": "^0.8.0"
   }
 }

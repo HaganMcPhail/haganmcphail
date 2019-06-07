@@ -1,0 +1,337 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #fff;
+  width: 100%;
+  margin: 0px 0px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 1.2rem;
+  color: #404040;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: relative;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: white;
+  min-height: 100vh;
+}
+header.header-wrapper {
+  height: 150px;
+  .main-header {
+    position: relative;
+    height: 50px;
+    top: 50px;
+    left: 0;
+    background-color: #19A6CD;
+    width: calc(100% - 50px);
+    margin-right: 50px;
+    img {
+      height: 51px;
+      margin-left: 50px;
+    }
+  }
+}
+.content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "one one one four five" "one one one six six" "two two three six six" "seven seven eight eight eight" "seven seven eight eight eight";
+}
+.box-01 {
+  grid-area: one;
+  position: relative;
+  background-image: url(../images/tools.png);
+  background-size: cover;
+  background-position: center center;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: calc((100% / 3) * 2);
+  }
+  h2 {
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  h2::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #19A6CD;
+  }
+  span {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  p {
+    margin: 0;
+    max-width: 480px;
+  }
+}
+.box-02 {
+  grid-area: two;
+  position: relative;
+  background: #343434;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    a {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 3%;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 0%;
+        background-color: #19A6CD;
+        z-index: 1;
+        transition: all .1s ease;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        height: 0%;
+        background-color: #19A6CD;
+        z-index: 1;
+        transition: all .1s ease;
+      }
+    }
+  }
+}
+.box-03 {
+  grid-area: three;
+  position: relative;
+  background-image: url(../images/dark-bg.png);
+  background-size: cover;
+  background-position: center center;
+  span a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 33%;
+    }
+  }
+}
+.box-04 {
+  grid-area: four;
+  position: relative;
+  background-image: url(../images/beach.png);
+  background-size: cover;
+  background-position: center center;
+}
+.box-05 {
+  grid-area: five;
+  position: relative;
+  background: #19A6CD;
+  overflow: hidden;
+  span a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 25%;
+    }
+  }
+}
+.box-06 {
+  grid-area: six;
+  position: relative;
+  background: #343434;
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    padding-top: 2%;
+    p {
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 2.25rem;
+      color: #fff;
+      text-align: center;
+      font-weight: 800;
+      line-height: 2.25rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+  }
+  .auth {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #19A6CD;
+    margin-bottom: -30px;
+  }
+  img {
+    width: 15%;
+    position: absolute;
+    &.quote-t {
+      top: 5%;
+      left: 5%;
+    }
+    &.quote-b {
+      top: 83%;
+      right: 5%;
+    }
+  }
+}
+.box-07 {
+  grid-area: seven;
+  position: relative;
+  background: #19A6CD;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+  }
+}
+.box-08 {
+  grid-area: eight;
+  position: relative;
+  background-image: url(../images/design.png);
+  background-size: cover;
+  background-position: center center;
+  span a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 90%;
+    }
+  }
+  ::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+.box-03::before,
+.box-04::before,
+.box-05::before,
+.box-06::before,
+.box-07::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.content span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  background-color: #19A6CD;
+  border: 3px solid #19A6CD;
+  padding: 0 20px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 800;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  &:hover {
+    background-color: transparent;
+  }
+}
+.box-small {
+  position: relative;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.2rem;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.box-large {
+  position: relative;
+  z-index: 10;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 3rem;
+  color: #19A6CD;
+  text-align: center;
+  font-weight: 800;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: all .1s ease;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+a:hover,
+a:focus,
+a:active {
+  color: initial;
+}
+a:visited {
+  color: initial;
+}
