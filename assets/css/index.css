@@ -294,6 +294,7 @@ header.header-wrapper .main-header img {
   margin-top: 20px;
   transition: all 0.2s ease;
   text-decoration: none;
+  color: black;
 }
 .hero-btn:hover {
   background-color: transparent;
@@ -334,4 +335,20 @@ a:active {
 }
 a:visited {
   color: initial;
+}
+@media screen and (max-width: 940px) {
+  .content {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "one one one one" "two two two four" "six six five five" "eight eight eight eight" "seven seven three three";
+  }
+  .box-01:before,
+  .box-06:before,
+  .box-07:before,
+  .box-08:before,
+  .box-09:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
 }
