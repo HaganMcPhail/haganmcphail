@@ -1,0 +1,341 @@
+@action-color: #19A6CD; //blue
+@dark-gray: #343434; //dark gray
+@white: #ffffff; //white
+@purple: #4B357C; //flickering innovations
+@green: #84A772; //fisher and sons
+@pink: #B46B7A; //p for piano
+@maroon: #692828; //think
+@orange: #F09630; //learning 2 logo
+@blue: #30ABCA; //zip cloud
+@light-gray: #F4F6F7; //zip cloud
+
+body {
+  background-color: @white;
+}
+
+.content.projects {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "one one one four five" "one one one six six" "two two three six six" "seven seven eight eight eight" "seven seven eight eight eight";
+  .box-01 {
+    grid-area: one;
+    position: relative;
+    background: @purple;
+    overflow: hidden;
+    span a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50%;
+      }
+    }
+  }
+  .box-02 {
+    grid-area: two;
+    position: relative;
+    background: @green;
+    overflow: hidden;
+    span a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 75%;
+      }
+    }
+  }
+  .box-03 {
+    grid-area: three;
+    position: relative;
+    background: @maroon;
+    overflow: hidden;
+    span a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60%;
+      }
+    }
+  }
+  .box-04 {
+    grid-area: four;
+    position: relative;
+    background: @orange;
+    overflow: hidden;
+    span a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60%;
+      }
+    }
+  }
+  .box-05 {
+    grid-area: five;
+    position: relative;
+    background: @pink;
+    overflow: hidden;
+    span a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50%;
+      }
+    }
+  }
+  .box-06 {
+    grid-area: six;
+    position: relative;
+    background: @white;
+    overflow: hidden;
+    span a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50%;
+      }
+    }
+  }
+  .box-07 {
+    grid-area: seven;
+    position: relative;
+    background: @dark-gray;
+    overflow: hidden;
+    span a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60%;
+      }
+    }
+  }
+  .box-08 {
+    grid-area: eight;
+    position: relative;
+    background: @blue;
+    overflow: hidden;
+    span a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60%;
+      }
+    }
+    ::before {
+      content: "";
+      display: block;
+    }
+  }
+  .box-03::before,
+  .box-04::before,
+  .box-05::before,
+  .box-06::before,
+  .box-07::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+.content span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  background-color: @action-color;
+  border: 3px solid @action-color;
+  padding: 0 20px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 800;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: @dark-gray;
+  &:hover {
+    background-color: transparent;
+  }
+}
+.box-small {
+  position: relative;
+  z-index: 10;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 1.1rem;
+  color: @white;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.1rem;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.box-large {
+  position: relative;
+  z-index: 10;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 2.5rem;
+  color: @action-color;
+  text-align: center;
+  font-weight: 800;
+  line-height: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: all .1s ease;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+a:hover,
+a:focus,
+a:active {
+  color: initial;
+}
+a:visited {
+  color: initial;
+}
+
+@media
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+  .content {
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: repeat(9, auto);
+      grid-template-areas: "one one one one" "two two four four" "eight eight eight eight" "six six five five" "seven seven three three";
+  }
+  .box-01:before {
+    padding-top: calc((100% / 4) * 2);
+  }
+  .box-05:before {
+    padding-top: 50%;
+  }
+  .box-06:before, .box-07:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+  }
+  .box-06 span p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .box-08 {
+    span a img {
+      height: 80%;
+      width: auto;
+    }
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .box-06 span p {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+  .box-small {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .box-large {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(9, auto);
+      grid-template-areas: "one" "two" "eight" "five" "six" "seven" "four";
+  }
+  .box-01:before {
+    padding-top: calc((100% / 3) * 2);
+  }
+  .box-04:before, .box-07:before {
+    padding-top: 75%;
+  }
+  .box-05:before {
+    padding-top: 50%;
+  }
+  .box-06 {
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+    span p {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+    }
+  }
+  .box-08 {
+    span a img {
+      height: 80%;
+      width: auto;
+    }
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 70%;
+    }
+  }
+}

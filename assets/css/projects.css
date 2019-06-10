@@ -1,0 +1,319 @@
+body {
+  background-color: #ffffff;
+}
+.content.projects {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "one one one four five" "one one one six six" "two two three six six" "seven seven eight eight eight" "seven seven eight eight eight";
+}
+.content.projects .box-01 {
+  grid-area: one;
+  position: relative;
+  background: #4B357C;
+  overflow: hidden;
+}
+.content.projects .box-01 span a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content.projects .box-01 span a img {
+  width: 50%;
+}
+.content.projects .box-02 {
+  grid-area: two;
+  position: relative;
+  background: #84A772;
+  overflow: hidden;
+}
+.content.projects .box-02 span a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content.projects .box-02 span a img {
+  width: 75%;
+}
+.content.projects .box-03 {
+  grid-area: three;
+  position: relative;
+  background: #692828;
+  overflow: hidden;
+}
+.content.projects .box-03 span a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content.projects .box-03 span a img {
+  width: 60%;
+}
+.content.projects .box-04 {
+  grid-area: four;
+  position: relative;
+  background: #F09630;
+  overflow: hidden;
+}
+.content.projects .box-04 span a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content.projects .box-04 span a img {
+  width: 60%;
+}
+.content.projects .box-05 {
+  grid-area: five;
+  position: relative;
+  background: #B46B7A;
+  overflow: hidden;
+}
+.content.projects .box-05 span a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content.projects .box-05 span a img {
+  width: 50%;
+}
+.content.projects .box-06 {
+  grid-area: six;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+}
+.content.projects .box-06 span a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content.projects .box-06 span a img {
+  width: 50%;
+}
+.content.projects .box-07 {
+  grid-area: seven;
+  position: relative;
+  background: #343434;
+  overflow: hidden;
+}
+.content.projects .box-07 span a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content.projects .box-07 span a img {
+  width: 60%;
+}
+.content.projects .box-08 {
+  grid-area: eight;
+  position: relative;
+  background: #30ABCA;
+  overflow: hidden;
+}
+.content.projects .box-08 span a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content.projects .box-08 span a img {
+  width: 60%;
+}
+.content.projects .box-08 ::before {
+  content: "";
+  display: block;
+}
+.content.projects .box-03::before,
+.content.projects .box-04::before,
+.content.projects .box-05::before,
+.content.projects .box-06::before,
+.content.projects .box-07::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.content span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  background-color: #19A6CD;
+  border: 3px solid #19A6CD;
+  padding: 0 20px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 800;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: #343434;
+}
+.hero-btn:hover {
+  background-color: transparent;
+}
+.box-small {
+  position: relative;
+  z-index: 10;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.1rem;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.box-large {
+  position: relative;
+  z-index: 10;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 2.5rem;
+  color: #19A6CD;
+  text-align: center;
+  font-weight: 800;
+  line-height: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: all 0.1s ease;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+a:hover,
+a:focus,
+a:active {
+  color: initial;
+}
+a:visited {
+  color: initial;
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .content {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "one one one one" "two two four four" "eight eight eight eight" "six six five five" "seven seven three three";
+  }
+  .box-01:before {
+    padding-top: calc((100% / 4) * 2);
+  }
+  .box-05:before {
+    padding-top: 50%;
+  }
+  .box-06:before,
+  .box-07:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .box-06 span p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .box-08 span a img {
+    height: 80%;
+    width: auto;
+  }
+  .box-08:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .box-06 span p {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+  .box-small {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .box-large {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "one" "two" "eight" "five" "six" "seven" "four";
+  }
+  .box-01:before {
+    padding-top: calc((100% / 3) * 2);
+  }
+  .box-04:before,
+  .box-07:before {
+    padding-top: 75%;
+  }
+  .box-05:before {
+    padding-top: 50%;
+  }
+  .box-06:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .box-06 span p {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+  .box-08 span a img {
+    height: 80%;
+    width: auto;
+  }
+  .box-08:before {
+    content: "";
+    display: block;
+    padding-top: 70%;
+  }
+}
