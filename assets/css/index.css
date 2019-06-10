@@ -262,7 +262,6 @@ header.header-wrapper .main-header img {
 .box-08 ::before {
   content: "";
   display: block;
-  padding-top: 100%;
 }
 .box-03::before,
 .box-04::before,
@@ -303,11 +302,11 @@ header.header-wrapper .main-header img {
   position: relative;
   z-index: 10;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #fff;
   text-align: center;
   font-weight: 400;
-  line-height: 1.2rem;
+  line-height: 1.1rem;
   margin-bottom: 0px;
   text-transform: uppercase;
 }
@@ -315,11 +314,11 @@ header.header-wrapper .main-header img {
   position: relative;
   z-index: 10;
   font-family: 'Proxima Nova', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #19A6CD;
   text-align: center;
   font-weight: 800;
-  line-height: 2.5rem;
+  line-height: 2rem;
   text-transform: uppercase;
   margin-bottom: 10px;
   transition: all 0.1s ease;
@@ -342,12 +341,21 @@ a:visited {
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "one one one one" "two two four four" "eight eight eight eight" "six six five five" "seven seven three three";
   }
+  .box-01:before {
+    padding-top: calc((100% / 4) * 2);
+  }
+  .box-05:before {
+    padding-top: 50%;
+  }
   .box-06:before,
-  .box-07:before,
-  .box-09:before {
+  .box-07:before {
     content: "";
     display: block;
     padding-top: 100%;
+  }
+  .box-06 span p {
+    font-size: 2rem;
+    line-height: 2rem;
   }
   .box-08 span a img {
     height: 80%;
@@ -358,29 +366,45 @@ a:visited {
     display: block;
     padding-top: 50%;
   }
-  .box-01:before {
-    padding-top: calc((100% / 4) * 2);
-  }
+}
+@media screen and (max-width: 850px) {
   .box-06 span p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+  .box-small {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .box-large {
+    font-size: 2rem;
     line-height: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {
-  body {
-    background-color: green;
-  }
   .content {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(9, auto);
-    grid-template-areas: "one" "two" "eight" "five" "six" "seven";
+    grid-template-areas: "one" "two" "eight" "five" "six" "seven" "four";
   }
-  .box-06:before,
-  .box-07:before,
-  .box-09:before {
+  .box-01:before {
+    padding-top: calc((100% / 2) * 2);
+  }
+  .box-04:before,
+  .box-07:before {
+    padding-top: 75%;
+  }
+  .box-05:before {
+    padding-top: 50%;
+  }
+  .box-06:before {
     content: "";
     display: block;
     padding-top: 100%;
+  }
+  .box-06 span p {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
   }
   .box-08 span a img {
     height: 80%;
@@ -389,13 +413,6 @@ a:visited {
   .box-08:before {
     content: "";
     display: block;
-    padding-top: 50%;
-  }
-  .box-01:before {
-    padding-top: calc((100% / 4) * 2);
-  }
-  .box-06 span p {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    padding-top: 70%;
   }
 }
