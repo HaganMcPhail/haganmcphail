@@ -257,7 +257,7 @@ header.header-wrapper .main-header img {
   align-items: center;
 }
 .box-08 span a img {
-  height: 90%;
+  width: 90%;
 }
 .box-08 ::before {
   content: "";
@@ -336,7 +336,7 @@ a:active {
 a:visited {
   color: initial;
 }
-@media screen and (max-width: 940px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   .content {
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(9, auto);
@@ -348,6 +348,10 @@ a:visited {
     content: "";
     display: block;
     padding-top: 100%;
+  }
+  .box-08 span a img {
+    height: 80%;
+    width: auto;
   }
   .box-08:before {
     content: "";
@@ -362,17 +366,25 @@ a:visited {
     line-height: 1.5rem;
   }
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 600px) {
+  body {
+    background-color: green;
+  }
   .content {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(9, auto);
-    grid-template-areas: "one" "two" "eight" "six" "five" "seven" "three" "four";
+    grid-template-areas: "one" "two" "eight" "five" "six" "seven";
   }
   .box-06:before,
   .box-07:before,
   .box-09:before {
     content: "";
     display: block;
+    padding-top: 100%;
+  }
+  .box-08 span a img {
+    height: 80%;
+    width: auto;
   }
   .box-08:before {
     content: "";
