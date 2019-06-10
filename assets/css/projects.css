@@ -237,81 +237,81 @@ a:visited {
   color: initial;
 }
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .content {
+  .content.projects {
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "one one one one" "two two four four" "eight eight eight eight" "six six five five" "seven seven three three";
   }
-  .box-01:before {
+  .content.projects .box-01:before {
     padding-top: calc((100% / 4) * 2);
   }
-  .box-05:before {
+  .content.projects .box-05:before {
     padding-top: 50%;
   }
-  .box-06:before,
-  .box-07:before {
+  .content.projects .box-06:before,
+  .content.projects .box-07:before {
     content: "";
     display: block;
     padding-top: 100%;
   }
-  .box-06 span p {
+  .content.projects .box-06 span p {
     font-size: 2rem;
     line-height: 2rem;
   }
-  .box-08 span a img {
+  .content.projects .box-08 span a img {
     height: 80%;
     width: auto;
   }
-  .box-08:before {
+  .content.projects .box-08:before {
     content: "";
     display: block;
     padding-top: 50%;
   }
 }
 @media screen and (max-width: 850px) {
-  .box-06 span p {
+  .content.projects .box-06 span p {
     font-size: 1.75rem;
     line-height: 1.75rem;
   }
-  .box-small {
+  .content.projects .box-small {
     font-size: 1rem;
     line-height: 1rem;
   }
-  .box-large {
+  .content.projects .box-large {
     font-size: 2rem;
     line-height: 1.5rem;
   }
 }
 @media screen and (max-width: 600px) {
-  .content {
+  .content.projects {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "one" "two" "eight" "five" "six" "seven" "four";
   }
-  .box-01:before {
+  .content.projects .box-01:before {
     padding-top: calc((100% / 3) * 2);
   }
-  .box-04:before,
-  .box-07:before {
+  .content.projects .box-04:before,
+  .content.projects .box-07:before {
     padding-top: 75%;
   }
-  .box-05:before {
+  .content.projects .box-05:before {
     padding-top: 50%;
   }
-  .box-06:before {
+  .content.projects .box-06:before {
     content: "";
     display: block;
     padding-top: 100%;
   }
-  .box-06 span p {
+  .content.projects .box-06 span p {
     font-size: 1.25rem;
     line-height: 1.25rem;
   }
-  .box-08 span a img {
+  .content.projects .box-08 span a img {
     height: 80%;
     width: auto;
   }
-  .box-08:before {
+  .content.projects .box-08:before {
     content: "";
     display: block;
     padding-top: 70%;
